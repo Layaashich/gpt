@@ -1,0 +1,30 @@
+.card-img-top {
+    transition: transform 0.3s ease;
+}
+.card:hover .card-img-top {
+    transform: scale(1.15);
+}
+body {
+    background: url("../icons/background.jpg") no-repeat center center fixed;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+}
+/* Обнуляем отступы и поля для всего документа */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Устанавливаем высоту html и body на 100% */
+html, body {
+  height: 100%;
+}
+
+/* Основной контент занимает все доступное пространство */
+main {
+  flex: 1;
+}
+

@@ -1,0 +1,32 @@
+.star-rating {
+  direction: rtl; /* Инвертируем порядок, чтобы звёзды шли слева направо */
+  display: inline-block;
+  font-size: 2rem;
+}
+
+.star-rating input[type="radio"] {
+  display: none;
+}
+
+.star-rating label {
+  color: #ccc;
+  cursor: pointer;
+  padding: 0 5px;
+  transition: color 0.2s;
+}
+
+/* При наведении на звезду и все предыдущие (в rtl порядке) меняем цвет */
+.star-rating label:hover,
+.star-rating label:hover ~ label {
+  color: #f5b301;
+}
+
+/* Если выбрана оценка, устанавливаем цвет выбранным звёздам */
+.star-rating input[type="radio"]:checked ~ label {
+  color: #f5b301;
+}
+
+/* Обеспечиваем порядок отображения звёзд (с учетом direction: rtl) */
+.star-rating label {
+  float: right;
+}
