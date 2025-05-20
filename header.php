@@ -21,6 +21,8 @@
       <li class="nav-item"><a class="nav-link" href="index.php">Главная</a></li>
       <li class="nav-item"><a class="nav-link" href="about.php">О нас</a></li>
       <li class="nav-item"><a class="nav-link" href="contacts.php">Контакты</a></li>
+      <li class="nav-item"><a class="nav-link" href="promotions.php">Акции</a></li>
+      <li class="nav-item"><a class="nav-link" href="faq.php">FAQ</a></li>
     </ul>
     <ul class="navbar-nav">
     <?php if(isset($_SESSION['user'])): ?>
